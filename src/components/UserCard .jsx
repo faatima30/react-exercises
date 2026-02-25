@@ -1,16 +1,14 @@
-
-function UserCard () {
-
+import PropTypes from "prop-types";
+function UserCard({ name, email }) {
   return (
     <>
-      
-      <h2>fatima</h2>
-      <p>
-fatima@gmail.com
-      </p>
-      
+      <h2>{name}</h2>
+      <p>{email}</p>
     </>
-  )
+  );
 }
-
-export default UserCard 
+UserCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+};
+export default UserCard;
