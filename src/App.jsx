@@ -1,12 +1,10 @@
 
-import UserCard from './components/UserCard '
+import Blog from './components/Blog'
 function App() {
 
   return (
     <>
-      
-      <h1>here is the assignment</h1>
-      <UserCard/>
+      <Blog />
     </>
   )
 }
